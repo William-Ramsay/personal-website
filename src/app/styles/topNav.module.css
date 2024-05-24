@@ -1,0 +1,13 @@
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em 0em;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 15em;
+  color: var(--color-one);
+}

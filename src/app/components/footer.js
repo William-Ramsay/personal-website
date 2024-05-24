@@ -1,6 +1,11 @@
 import React from "react";
+import styles from "../styles/footer.module.css";
 
 //!
 export default function Footer() {
-  return <footer>FOOTER</footer>;
+  return (
+    <footer className={styles.footer}>
+      <p>William Ramsay - 2024</p>
+    </footer>
+  );
 }
