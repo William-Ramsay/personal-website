@@ -1,3 +1,3 @@
 export default function Education() {
-  return <h1></h1>;
+  return <h1>Test</h1>;
 }
