@@ -1,0 +1,10 @@
+.outerSquare {
+  width: 10em;
+  height: 10em;
+  background-color: red;
+}
+.innerSquare {
+  width: 10em;
+  height: 8em;
+  background-color: black;
+}
