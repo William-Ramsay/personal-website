@@ -1,6 +1,7 @@
 import "./global.css";
 import TopNav from "./components/topNav";
 import Footer from "./components/footer";
+import BrowserVisual from "./components/browserVisual";
 
 export const metadata = {
   title: "Next.js",
