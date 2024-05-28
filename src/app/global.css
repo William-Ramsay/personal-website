@@ -4,34 +4,62 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --color-one: #f9d3ff;
-  --color-two: #6564a7;
-  --color-three: #8384c4;
+  /* Color Palette */
+  --light-pink: #f9d3ff;
+  --light-purple: #8483c4;
+  --dark-purple: #6564a7;
+  --yellow: #ffeca9;
+  --green: #b4f8c2;
+  --grey: grey;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Application of color palette in application (Colors will be swapped often) */
+  --first-background: var(--light-purple);
+  --second-background: var(--light-pink);
+
+  --border: var(--dark-purple);
 }
 
 html {
   padding: 0em 2em;
-  background-color: var(--color-two);
+  background-color: var(--border);
+  height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  display: grid;
+  display: flex;
   flex-direction: column;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 main {
-  padding: 2em;
   background-image: linear-gradient(
-    360deg,
-    var(--color-one),
-    var(--color-three)
+    180deg,
+    var(--first-background),
+    var(--second-background)
   );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0em;
+  border-radius: 1em;
+  flex-grow: 1;
+  flex-wrap: wrap;
   border-radius: 1em;
 }
 
 main + * {
   color: var(--color-one);
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    padding: 0em 1em;
+  }
 }

@@ -9,5 +9,5 @@
   display: flex;
   justify-content: space-between;
   width: 15em;
-  color: var(--color-one);
+  color: var(--second-background);
 }

@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../styles/topNav.module.css";
 import Link from "next/link";
 
-//! Incomplete component
 export default function TopNav() {
   return (
     <nav className={styles.topNav}>

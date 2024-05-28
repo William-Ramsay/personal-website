@@ -1,10 +1,8 @@
 import React from "react";
-import styles from "../styles/footer.module.css";
 
-//!
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className="self-center my-5">
       <p>William Ramsay - 2024</p>
     </footer>
   );
